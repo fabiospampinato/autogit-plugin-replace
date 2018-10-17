@@ -26,12 +26,12 @@ This plugin uses the following options object:
 Add this plugin to a command:
 
 ```js
-const autogitPluginReplace = require ( 'autogit-plugin-replace' );
+const replace = require ( 'autogit-plugin-replace' );
 
 module.exports = {
   commands: {
     'my-command': [
-      autogitPluginReplace ({
+      replace ({
         paths: ['readme.md'],
         replacements: [
           [/pulgin/g, 'plugin'],
